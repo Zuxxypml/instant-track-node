@@ -1,0 +1,492 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* UI Icons  */
+@font-face {
+  font-family: "ui-icons";
+  src: url("../fonts/ui-iconsdc9c.html?28565742");
+  src: url("../fonts/ui-iconsdc9c.html?28565742#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ui-iconsdc9c.woff2?28565742") format("woff2"),
+    url("../fonts/ui-iconsdc9c-2.html?28565742") format("woff"),
+    url("../fonts/ui-iconsdc9c-3.html?28565742") format("truetype"),
+    url("../fonts/ui-iconsdc9c-4.html?28565742#ui-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'ui-icons';
+    src: url('../font/ui-icons.svg?28565742#ui-icons') format('svg');
+  }
+}
+*/
+
+[class^="ui-"]:before,
+[class*=" ui-"]:before {
+  font-family: "ui-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline;
+  text-decoration: inherit;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.ui-cassette-player:before {
+  content: "\e800";
+} /* 'î €' */
+.ui-charlie-chaplin:before {
+  content: "\e801";
+} /* 'î ' */
+.ui-chef-hat:before {
+  content: "\e802";
+} /* 'î ‚' */
+.ui-clock:before {
+  content: "\e803";
+} /* 'î ƒ' */
+.ui-coffee-machine:before {
+  content: "\e804";
+} /* 'î "' */
+.ui-cog:before {
+  content: "\e805";
+} /* 'î …' */
+.ui-computer-imac:before {
+  content: "\e806";
+} /* 'î †' */
+.ui-computer-network:before {
+  content: "\e807";
+} /* 'î ‡' */
+.ui-computer-pc:before {
+  content: "\e808";
+} /* 'î ˆ' */
+.ui-computer-screen-1:before {
+  content: "\e809";
+} /* 'î ‰' */
+.ui-check:before {
+  content: "\e80a";
+} /* 'î Š' */
+.ui-computer-screen-2:before {
+  content: "\e80b";
+} /* 'î ‹' */
+.ui-contact-book:before {
+  content: "\e80c";
+} /* 'î Œ' */
+.ui-content-download:before {
+  content: "\e80d";
+} /* 'î ' */
+.ui-cooking-pot:before {
+  content: "\e80e";
+} /* 'î Ž' */
+.ui-crop:before {
+  content: "\e80f";
+} /* 'î ' */
+.ui-crown:before {
+  content: "\e810";
+} /* 'î ' */
+.ui-designer-cup:before {
+  content: "\e811";
+} /* 'î '' */
+.ui-diving-gear:before {
+  content: "\e812";
+} /* 'î '' */
+.ui-drink-cocktail:before {
+  content: "\e813";
+} /* 'î "' */
+.ui-drink-coffee:before {
+  content: "\e814";
+} /* 'î "' */
+.ui-e-mail:before {
+  content: "\e815";
+} /* 'î •' */
+.ui-envelope:before {
+  content: "\e816";
+} /* 'î –' */
+.ui-eyedropper:before {
+  content: "\e817";
+} /* 'î —' */
+.ui-fork-knife:before {
+  content: "\e818";
+} /* 'î ˜' */
+.ui-forklift:before {
+  content: "\e819";
+} /* 'î ™' */
+.ui-fountain-pen-head-1:before {
+  content: "\e81a";
+} /* 'î š' */
+.ui-fountain-pen-head-2:before {
+  content: "\e81b";
+} /* 'î ›' */
+.ui-gauge:before {
+  content: "\e81c";
+} /* 'î œ' */
+.ui-globe:before {
+  content: "\e81d";
+} /* 'î ' */
+.ui-grid:before {
+  content: "\e81e";
+} /* 'î ž' */
+.ui-griller:before {
+  content: "\e81f";
+} /* 'î Ÿ' */
+.ui-handbag:before {
+  content: "\e820";
+} /* 'î  ' */
+.ui-headphone:before {
+  content: "\e821";
+} /* 'î ¡' */
+.ui-heart:before {
+  content: "\e822";
+} /* 'î ¢' */
+.ui-home:before {
+  content: "\e823";
+} /* 'î £' */
+.ui-hotdog:before {
+  content: "\e824";
+} /* 'î ¤' */
+.ui-icecream:before {
+  content: "\e825";
+} /* 'î ¥' */
+.ui-image:before {
+  content: "\e826";
+} /* 'î ¦' */
+.ui-iphone:before {
+  content: "\e827";
+} /* 'î §' */
+.ui-ipod:before {
+  content: "\e828";
+} /* 'î ¨' */
+.ui-layers:before {
+  content: "\e829";
+} /* 'î ©' */
+.ui-layers-image:before {
+  content: "\e82a";
+} /* 'î ª' */
+.ui-link:before {
+  content: "\e82b";
+} /* 'î «' */
+.ui-location-pin:before {
+  content: "\e82c";
+} /* 'î ¬' */
+.ui-location-user:before {
+  content: "\e82d";
+} /* 'î ­' */
+.ui-lock-locked:before {
+  content: "\e82e";
+} /* 'î ®' */
+.ui-lock-unlocked:before {
+  content: "\e82f";
+} /* 'î ¯' */
+.ui-magic-wand:before {
+  content: "\e830";
+} /* 'î °' */
+.ui-magnet:before {
+  content: "\e831";
+} /* 'î ±' */
+.ui-microphone:before {
+  content: "\e832";
+} /* 'î ²' */
+.ui-monocle:before {
+  content: "\e833";
+} /* 'î ³' */
+.ui-mp3-player:before {
+  content: "\e834";
+} /* 'î ´' */
+.ui-music-note:before {
+  content: "\e835";
+} /* 'î µ' */
+.ui-notebook-1:before {
+  content: "\e836";
+} /* 'î ¶' */
+.ui-notebook-2:before {
+  content: "\e837";
+} /* 'î ·' */
+.ui-paint-brush:before {
+  content: "\e838";
+} /* 'î ¸' */
+.ui-paint-bucket:before {
+  content: "\e839";
+} /* 'î ¹' */
+.ui-paint-palette:before {
+  content: "\e83a";
+} /* 'î º' */
+.ui-paint-roller:before {
+  content: "\e83b";
+} /* 'î »' */
+.ui-pencil-ruler:before {
+  content: "\e83c";
+} /* 'î ¼' */
+.ui-pen-fountain:before {
+  content: "\e83d";
+} /* 'î ½' */
+.ui-pen-point-tip:before {
+  content: "\e83e";
+} /* 'î ¾' */
+.ui-picture-frame:before {
+  content: "\e83f";
+} /* 'î ¿' */
+.ui-quill-ink:before {
+  content: "\e840";
+} /* 'î¡€' */
+.ui-refresh:before {
+  content: "\e841";
+} /* 'î¡' */
+.ui-remote-control-hand:before {
+  content: "\e842";
+} /* 'î¡‚' */
+.ui-remote-control-screen:before {
+  content: "\e843";
+} /* 'î¡ƒ' */
+.ui-script:before {
+  content: "\e844";
+} /* 'î¡"' */
+.ui-server:before {
+  content: "\e845";
+} /* 'î¡…' */
+.ui-settings:before {
+  content: "\e846";
+} /* 'î¡†' */
+.ui-shield-cross:before {
+  content: "\e847";
+} /* 'î¡‡' */
+.ui-shopping-cart-add:before {
+  content: "\e848";
+} /* 'î¡ˆ' */
+.ui-shopping-cart-remove:before {
+  content: "\e849";
+} /* 'î¡‰' */
+.ui-skull:before {
+  content: "\e84a";
+} /* 'î¡Š' */
+.ui-smart-device:before {
+  content: "\e84b";
+} /* 'î¡‹' */
+.ui-smiley:before {
+  content: "\e84c";
+} /* 'î¡Œ' */
+.ui-sneakers:before {
+  content: "\e84d";
+} /* 'î¡' */
+.ui-sofa:before {
+  content: "\e84e";
+} /* 'î¡Ž' */
+.ui-stamp:before {
+  content: "\e84f";
+} /* 'î¡' */
+.ui-sub-woofer:before {
+  content: "\e850";
+} /* 'î¡' */
+.ui-syringe:before {
+  content: "\e851";
+} /* 'î¡'' */
+.ui-target:before {
+  content: "\e852";
+} /* 'î¡'' */
+.ui-teapot:before {
+  content: "\e853";
+} /* 'î¡"' */
+.ui-trash-can:before {
+  content: "\e854";
+} /* 'î¡"' */
+.ui-umbrella:before {
+  content: "\e855";
+} /* 'î¡•' */
+.ui-user:before {
+  content: "\e856";
+} /* 'î¡–' */
+.ui-user-chat:before {
+  content: "\e857";
+} /* 'î¡—' */
+.ui-vector:before {
+  content: "\e858";
+} /* 'î¡˜' */
+.ui-windows-1:before {
+  content: "\e859";
+} /* 'î¡™' */
+.ui-wrenches:before {
+  content: "\e85a";
+} /* 'î¡š' */
+.ui-write:before {
+  content: "\e85b";
+} /* 'î¡›' */
+.ui-backpack:before {
+  content: "\e85c";
+} /* 'î¡œ' */
+.ui-bomb:before {
+  content: "\e85d";
+} /* 'î¡' */
+.ui-book:before {
+  content: "\e85e";
+} /* 'î¡ž' */
+.ui-briefcase:before {
+  content: "\e85f";
+} /* 'î¡Ÿ' */
+.ui-bubble-chat:before {
+  content: "\e860";
+} /* 'î¡ ' */
+.ui-bubble-heart:before {
+  content: "\e861";
+} /* 'î¡¡' */
+.ui-camera-photo:before {
+  content: "\e862";
+} /* 'î¡¢' */
+.ui-camera-polaroid:before {
+  content: "\e863";
+} /* 'î¡£' */
+.ui-camera-video:before {
+  content: "\e864";
+} /* 'î¡¤' */
+.ui-twitter:before {
+  content: "\f099";
+} /* 'ï‚™' */
+.ui-github:before {
+  content: "\f09b";
+} /* 'ï‚›' */
+.ui-linkedin:before {
+  content: "\f0e1";
+} /* 'ïƒ¡' */
+.ui-arrow-left:before {
+  content: "\f104";
+} /* 'ï""' */
+.ui-arrow-right:before {
+  content: "\f105";
+} /* 'ï"…' */
+.ui-arrow-up:before {
+  content: "\f106";
+} /* 'ï"†' */
+.ui-arrow-down:before {
+  content: "\f107";
+} /* 'ï"‡' */
+.ui-youtube:before {
+  content: "\f167";
+} /* 'ï…§' */
+.ui-xing:before {
+  content: "\f168";
+} /* 'ï…¨' */
+.ui-dropbox:before {
+  content: "\f16b";
+} /* 'ï…«' */
+.ui-stackoverflow:before {
+  content: "\f16c";
+} /* 'ï…¬' */
+.ui-instagram:before {
+  content: "\f16d";
+} /* 'ï…­' */
+.ui-flickr:before {
+  content: "\f16e";
+} /* 'ï…®' */
+.ui-bitbucket:before {
+  content: "\f171";
+} /* 'ï…±' */
+.ui-tumblr:before {
+  content: "\f173";
+} /* 'ï…³' */
+.ui-apple:before {
+  content: "\f179";
+} /* 'ï…¹' */
+.ui-windows:before {
+  content: "\f17a";
+} /* 'ï…º' */
+.ui-android:before {
+  content: "\f17b";
+} /* 'ï…»' */
+.ui-dribbble:before {
+  content: "\f17d";
+} /* 'ï…½' */
+.ui-skype:before {
+  content: "\f17e";
+} /* 'ï…¾' */
+.ui-foursquare:before {
+  content: "\f180";
+} /* 'ï†€' */
+.ui-trello:before {
+  content: "\f181";
+} /* 'ï†' */
+.ui-vkontakte:before {
+  content: "\f189";
+} /* 'ï†‰' */
+.ui-vimeo:before {
+  content: "\f194";
+} /* 'ï†"' */
+.ui-slack:before {
+  content: "\f198";
+} /* 'ï†˜' */
+.ui-google:before {
+  content: "\f1a0";
+} /* 'ï† ' */
+.ui-reddit:before {
+  content: "\f1a1";
+} /* 'ï†¡' */
+.ui-stumbleupon:before {
+  content: "\f1a4";
+} /* 'ï†¤' */
+.ui-delicious:before {
+  content: "\f1a5";
+} /* 'ï†¥' */
+.ui-digg:before {
+  content: "\f1a6";
+} /* 'ï†¦' */
+.ui-behance:before {
+  content: "\f1b4";
+} /* 'ï†´' */
+.ui-spotify:before {
+  content: "\f1bc";
+} /* 'ï†¼' */
+.ui-soundcloud:before {
+  content: "\f1be";
+} /* 'ï†¾' */
+.ui-codeopen:before {
+  content: "\f1cb";
+} /* 'ï‡‹' */
+.ui-git:before {
+  content: "\f1d3";
+} /* 'ï‡"' */
+.ui-slideshare:before {
+  content: "\f1e7";
+} /* 'ï‡§' */
+.ui-twitch:before {
+  content: "\f1e8";
+} /* 'ï‡¨' */
+.ui-lastfm:before {
+  content: "\f202";
+} /* 'ïˆ‚' */
+.ui-forumbee:before {
+  content: "\f211";
+} /* 'ïˆ'' */
+.ui-sellsy:before {
+  content: "\f213";
+} /* 'ïˆ"' */
+.ui-shirtsinbulk:before {
+  content: "\f214";
+} /* 'ïˆ"' */
+.ui-skyatlas:before {
+  content: "\f216";
+} /* 'ïˆ–' */
+.ui-pinterest:before {
+  content: "\f231";
+} /* 'ïˆ±' */
+.ui-whatsapp:before {
+  content: "\f232";
+} /* 'ïˆ²' */
+.ui-facebook:before {
+  content: "\f308";
+} /* 'ïŒˆ' */
