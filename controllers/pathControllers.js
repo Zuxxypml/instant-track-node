@@ -43,3 +43,6 @@ export const renderTrackingpage = async (req, res) => {
 export const renderInvoicepage = async (req, res) => {
   res.render("invoice");
 };
+export const renderTrackpageGeneratorpage = async (req, res) => {
+  res.render('tracklinkgenerator')
+}
